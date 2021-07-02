@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Сайт инвентаризации</h2>
+    <form action="/add/" method="POST">
+        <input type="text" name="good">
+        <button>Добавить</button>
+    </form>
+    <ol>
+        {% for good in goods %}
+        <li>{{ good}}</li>
+        {% endfor %}
+    </ol>
+    
+</body>
+</html>
